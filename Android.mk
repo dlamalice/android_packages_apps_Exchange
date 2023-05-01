@@ -42,6 +42,8 @@ LOCAL_PRODUCT_MODULE := true
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 LOCAL_SDK_VERSION := 19
+# ajout LOCAL_USES_LIBRARIES := org.apache.http.legacy pour eviter pb de compilation
+LOCAL_USES_LIBRARIES  := org.apache.http.legacy
 
 LOCAL_JACK_COVERAGE_INCLUDE_FILTER += com.android.exchange.*
 
